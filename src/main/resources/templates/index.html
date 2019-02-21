@@ -6,26 +6,26 @@ Include Bootstrap in your app.-->
 
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
-<link>
+<head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
     <title>Favorite Film</title>
-    <!--google font link-->
+    <!--Imported Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
-    <!--bootstrap css-->
+    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <!--my css that overwrites it-->
+    <!--My CSS that overwrites it-->
     <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
 </head>
 
-<body style="background-color: #e3f2fd;">
+<body>
 <div class="container">
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
         <!-- Navbar content -->
-        <a class="navbar-brand" href="#">HP</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">HP🗲</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,7 +43,7 @@ Include Bootstrap in your app.-->
                     <a class="nav-link" href="/series">Series</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pottermore">Pottermore</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@ Include Bootstrap in your app.-->
 <br>
 
 <div class="container">
-    <div class="jumbotron" align="center";>
+    <div class="jumbotron" style="background-color: #e3f2fd;" align="center";>
         <h1><b>Harry Potter and the Philosopher's Stone</b></h1>
         <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550785514/img_0633.gif" alt="Title gif" style="width:35%">
     </div>
@@ -73,9 +73,10 @@ Include Bootstrap in your app.-->
                 Beloved by children, young adults and adults all alike, Harry Potter has been an integral part of the 90's kids life, and has grown into a francise over the decade long period.
                 It continues to bewitch new audiences of this generation, and can be experienced in books, movies, and theatre adaptations, as well as in 4D theme park.
             </p>
-            <br>
-            <p>In this first installation, Harry enters the Magic world for the first time and attends the Hogwarts School of Witchcraft and Wizardry in England,
-                where he learns the truth about his parents, and encounters evil in the most unexpected manner.</p>
+            <p>
+                In this first installation, Harry enters the Magic world for the first time and attends the Hogwarts School of Witchcraft and Wizardry in England,
+                where he learns the truth about his parents, and encounters evil in the most unexpected manner.
+            </p>
             <br>
         </div>
     </div>
