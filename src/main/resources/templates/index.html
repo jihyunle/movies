@@ -1,0 +1,79 @@
+<!--Create a basic Spring Boot app with one webpage describing your favorite movie.
+
+Use Cloudinary to host your image. You must show at least 3 images.
+
+Include Bootstrap in your app.-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Favorite Film</title>
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--my css that overwrites it-->
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+
+
+
+</head>
+<body style="background-image:url('https://res.cloudinary.com/jihyunle/image/upload/v1550766042/harry_potter_great_hall.jpg');">
+<h1>Favorite Film</h1>
+
+<h2>Background Image</h2>
+
+<p></p>
+<p></p>
+
+<h2>A closer look at J.K. Rowling's Harry Potter</h2>
+
+    <p>Harry Potter and the Sorcerer's Stone was made in 2001 and is the first of 8 in the movie franchise based on J.K. Rowling's books.
+    It tells the story of a boy wizard named Harry Potter who was destined to defeat the great evil wizard who terrorized both the Magical and Normal worlds.
+    In this first installation, Harry enters the Magic world for the first time and attends the Hogwarts School of Witchcraft and Wizardry,
+    where he learns the truth about his parents, and encounters evil in the most unexpected manner. </p>
+<p></p>
+<p></p>
+
+<h2>Characters</h2>
+    <ul>
+        <li>Harry Potter, the main character</li>
+        <li>Ron Weasley, red-headed and loyal friend</li>
+        <li>Hermoine Granger, adorable and brilliant friend of Harry's, also from the muggle world</li>
+        <li>Album Dumbledore, the head of school</li>
+        <li>Hagrid, the gate keeper</li>
+    </ul>
+
+<p></p>
+<p></p>
+
+<div class="row">
+    <div class="column">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762415/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc_._V1_.jpg" alt="Poster">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762528/MV5BMTU0MzQ5NTAwMF5BMl5BanBnXkFtZTYwNTU0NTg3._V1_.jpg" alt="Harry with Hedwig">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762584/MV5BMTkyMDM1NDA5MV5BMl5BanBnXkFtZTgwMzE0ODAxMTI_._V1_.jpg" alt="Sorting Hat">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762600/MV5BMjA5NzU2MDYzMF5BMl5BanBnXkFtZTcwODIzNDc3Mw_._V1_SY1000_CR0_0_1504_1000_AL_.jpg" alt="">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762630/MV5BMjAyMTUwMTQ4Ml5BMl5BanBnXkFtZTYwOTM0NTg3._V1_.jpg" alt="Wingadium Leviosa">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550762616/MV5BNDExMjI0ODg4N15BMl5BanBnXkFtZTYwNTQ0NTg3._V1_.jpg" alt="Dark Forest">
+    </div>
+    <div class="column">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550763373/image.jpg" alt="great hall">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550767513/harry-potter-and-the-sorcerers-stone.jpg" alt="The three">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550767516/HPSS.png" alt="wand">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550767520/mv5bmdqwywrlyzytmwy2ny00ngi2ltkzzdmtzgu2nzkxymi4ntgyl2ltywdll2ltywdlxkeyxkfqcgdeqxvynjk4mtgzmdi-_v1_.jpg" alt="the three">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550767641/hogwarts.jpg_1521001799.jpg" alt="castle">
+        <img src="https://res.cloudinary.com/jihyunle/image/upload/v1550767702/a947150a07e9aae7e5bd4ada7271ccce--harry-potter--harry-ron.jpg" alt="platform">
+    </div>
+</div>
+
+
+<p>Go to the <a href="https://www.imdb.com/title/tt0241527/"> Harry Potter and the Sorcerer's Stone </a> IMDB page</p>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
